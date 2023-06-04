@@ -1,0 +1,53 @@
+h6{
+    font-family: "Sofia", sans-serif;
+    color: red;
+  }
+html.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.header{
+    padding: 2px 20px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.header a i{
+    font-size: 12px;
+}
+.navbar{
+    background: linear-gradient(to right, red,black);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .navbar-nav>.dropdown:hover dropdown-menu{
+    display: block;
+}
+.navbar .navbar-nav .dropdown-menu{
+    border-radius: 0px;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover{
+    background: linear-gradient(to right, red,black);
+    transition: 6s ease-in-out;
+}
+.content{
+    height: 100%;
+    width: 100%;
+}
+footer{
+    background: linear-gradient(to right, aqua,royalblue);
+
+}
+.contract-area{
+    width: 100%;
+
+}

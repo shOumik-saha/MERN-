@@ -1,0 +1,87 @@
+.blue{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    background-color: blue;
+    position: absolute;
+}
+.yellow{
+    width: 500px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    background-color: yellow;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: -1;
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+}
+.box{
+    width: 500px;
+    height: 200px;
+    border: 1px solid red;
+    max-width: fit-content;
+}
+p::first-letter{
+    font-size: 60px;
+    font-weight: bold;
+}
+p::first-line{
+    color: aqua;
+}
+li:first-child{
+    color:brown;
+}
+li:nth-child(4){
+    color:aquamarine;
+}
+h2:nth-child(even){
+    font-size: 30px;
+    color: green;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    position: relative;
+    z-index: 1;
+}
+button:before{
+    content: "";
+    width: 10%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: royalblue;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover:before{
+    width: 100%;
+}
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto auto ;
+background-color: aqua;
+padding: 15px;
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+.grid-container .grid-item{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.item1{
+    grid-column: 1/span 3;
+}
